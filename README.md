@@ -1,2 +1,2 @@
 # kiosk
-raspberrypi kiosk
+raspberrypi kiosk mode settings
