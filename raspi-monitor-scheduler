@@ -1,7 +1,8 @@
 # /etc/cron.d/raspi-monitor-scheduler
 
-# Enable the monitor every weekday morning at 8:00
-00 11 * * 1,2,3,4,5 root /usr/local/sbin/raspi-monitor on > /dev/null 2>&1
+# Hafta içi 8:00 de ekrani acar
+00 8 * * 1,2,3,4,5 root /usr/local/sbin/raspi-monitor on > /dev/null 2>&1
 
-# Disable the monitor every weekday evening at 17:30
-00 14 * * 1,2,3,4,5 root /usr/local/sbin/raspi-monitor off > /dev/null 2>&1
+# Hafta içi 17:00 de ekrani kapar
+00 17 * * 1,2,3,4,5 root /usr/local/sbin/raspi-monitor off > /dev/null 2>&1
+
