@@ -1,9 +1,8 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/chromium-browser  --incognito --noerrdialogs --disable-session-crashed-bubble --disable-infobars --disabled  --kiosk http://eti00sgnsrv01.etimaden.gov.tr
-#Exec=/usr/bin/chromium-browser  --incognito --noerrdialogs --disable-session-crashed-bubble --disable-infobars --disabled --disk-cache-dir /dev/null --disk-cache-size 0  --kiosk http://demo.datascreen.info
+Exec=/usr/bin/chromium-browser  --incognito --noerrdialogs --disable-session-crashed-bubble --disable-infobars --disabled  --kiosk http://acilmakuzreolan.sayfa.com
 hidden=false
 X-GNOME-Autostart-enabled=true
 Name[en_US]=AutoChromium
 Name=AutoChromium
-Comment=Start Chromium when GNOME starts
+Comment=Acilista Chromeu otomatik acar
