@@ -1,5 +1,5 @@
 # /etc/cron.d/refresh                
 
-# chrome screen refresh every 5 minutes           
+# 5 dakikada bir ekrani yeniler          
 */5 * * * 1,2,3,4,5 pi /bin/sh /usr/local/sbin/refresh2.sh > /dev/null 2>&1
 
