@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # /usr/local/sbin/raspi-monitor
-# Script to enable and disable the HDMI signal of the Raspberry PI
+# Hdmi sinyalini acar kapatir.
 # Inspiration: http://www.raspberrypi.org/forums/viewtopic.php?t=16472&p=176258
 
 CMD="$1"
@@ -9,7 +9,7 @@ CMD="$1"
 function on {
     /opt/vc/bin/tvservice --preferred
 
-    # Hack to enable virtual terminal nr 7 again:
+    # terminal init:
     chvt 6
     chvt 7
 }
@@ -20,7 +20,7 @@ function off {
 
 function must_be_root {
     if [ $USER != root ]; then
-        echo "ERROR: Script must be executed as the root user"
+        echo "ERROR: Root olarak calistir"
         exit 1
     fi
 }
@@ -32,7 +32,7 @@ function main {
     elif [ "$CMD" == "off" ]; then
         off
     else
-        echo "Usage: $0 <on|off>"
+        echo "Kullanim: $0 <on|off>"
         exit 1
     fi
     exit 0
